@@ -3,6 +3,7 @@
 0.0.0.0 cisnet.iqsn.de
 0.0.0.0 collector.githubapp.com
 0.0.0.0 fonts.googleapis.com
+0.0.0.0 piwik.bayern.de
 0.0.0.0 tag.aticdn.net
 0.0.0.0 tagcommander.com
 0.0.0.0 tracksrv.zdf.de
