@@ -11,9 +11,15 @@
 # Facebook
 0.0.0.0 facebook.com
 0.0.0.0 facebook.net
+0.0.0.0 fbcdn.net
 # G
+0.0.0.0 blogger.com
+0.0.0.0 blogspot.com
 0.0.0.0 google.com
+0.0.0.0 google.de
 0.0.0.0 googleusercontent.com
+0.0.0.0 googlevideo.com
+0.0.0.0 googleapis.com
 0.0.0.0 gstatic.com
 0.0.0.0 youtube.com
 0.0.0.0 ytimg.com
@@ -27,6 +33,7 @@
 # Paypal
 0.0.0.0 paypal.com
 # Twitter
+0.0.0.0 twimg.com
 0.0.0.0 twitter.com
 # Others
 0.0.0.0 500px.com
@@ -38,6 +45,7 @@
 0.0.0.0 carbonmade.com
 0.0.0.0 craigslist.org
 0.0.0.0 disqus.com
+0.0.0.0 ebay.de
 0.0.0.0 edx.org
 0.0.0.0 expedia.de
 0.0.0.0 foursquare.com
