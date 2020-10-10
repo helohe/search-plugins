@@ -1,7 +1,3 @@
-##########
-# This file contains domains missing in the host-files from uMatrix
-##########
-
 0.0.0.0 aticdn.net
 0.0.0.0 cdn.tagcommander.com
 0.0.0.0 cisnet.iqsn.de
@@ -10,4 +6,7 @@
 0.0.0.0 piwik.bayern.de
 0.0.0.0 tag.aticdn.net
 0.0.0.0 tagcommander.com
+0.0.0.0 tracking.3sat.de
 0.0.0.0 tracksrv.zdf.de
+0.0.0.0 analytics.lego.com
+0.0.0.0 trackman.lego.com
