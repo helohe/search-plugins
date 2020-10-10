@@ -1,0 +1,69 @@
+
+ - Install firefox
+ - Edit policies.json (Remove unwanted Extensions)
+ - Add policies.json to firefox (`$XDG_RUNTIME_DIR/firefox/policies.json`, `/usr/lib64/firefox/distribution/policies.json`).
+ - Create a new firefox profile
+   - Start firefox with `--ProfileManager` and create a profile
+ - Setup the user.js
+   - Go to the new firefox-profile
+   - Download the arkenfox user.js [`updater.sh`] script 
+   - Make `updater.sh` executable if necessary.
+   - Add your user-overrides.js
+   - Run `./updater.sh`
+ - Start firefox with the new profile
+ - FIXME: LangPack
+ - Configure Extensions
+   - uBlock origin
+     - {OFF} Make use of context menu where appropriate
+     - {ON} I am an advanced user
+     - {ON} Prevent WebRTC from leaking local IP addresses
+     - {ON} Block CSP reports
+     - Use all filterlists except those loaded via http or not for your region
+     - My filters: See below
+   - uMatrix
+     - Default scope level: Site
+     - {OFF} Clear browser cache every 60 minutes
+     - {OFF} Spoof HTTP referrer string of third-party requests
+     - contributorMode = true (RawSetting)
+     - remove all default rules
+     - global ruleset: see [assets/uMatrix:Global_Ruleset.txt](assets/uMatrix:Global_Ruleset.txt)
+   - Temporary Containers
+     - {ON} General > Automatic Mode
+     - General > Delete no longer needed Temporary Containers: 5 minutes
+     - General > Toolbar Icon Color: black (simple)
+     - Isolation > Global > Navigation > Different from Tab Domain & Subdomain
+     - Advanced > General > Automatic Mode: Don't instantly reopen new tabs in Temporary Containers but instead when new tabs start to navigate to a website. Already typed characters in the address bar are never lost, but new tabs can set and read cookies in the default container
+     - Advanced > General > Popup > Default Tab: Isolation Per Domain
+     - {ON} Advanced > Popup > Show icon in the address bar that reveals the popup
+     - Advanced > General > Ignoring requests to: _EMPTY_
+     - TODO: Advanced > General > Keyboard shortcuts 
+     - {ON} Statistics > Collect local statistics about Temporary Containers
+   - Smart Referer
+     - {OFF} Use default whitelist
+     - Domain name matching strictness: Strict
+   - HTTPS Everywhere
+     - {ON} Enable mixed content rulesets
+     - {OFF} Show Devtools tab
+   - ClearURLs
+     - {OFF} Allow domain blocking
+     - {OFF} Display context menu entry
+     - {OFF} Filters ETag headers from requests
+   - Request Control
+     - Disable all rules
+   - CSS Exfil Protection
+   - True Sight
+     - Optional: {ON} enable heuristics
+   - NoScript
+     - {ON} Cascade top document's restrictions to subdocuments
+     - DEFAULT: TODO
+     - TRUSTED: TODO
+     - Per-site Permissions: _EMPTY_ (Clear default whitelist)
+     - {OFF} Appearance > Show NoScript contextual menu item
+     - FIXME: {ON} Appearance > List full addresses in the permissions popup
+ - Allow uBlock origin and uMatrix in PBM
+ - Delete default-containers and create your own.
+ - Remove policies.json
+ - TODO: SuMa-Plugins
+ - Import Bookmarks
+
+[`updater.sh`]: https://raw.githubusercontent.com/arkenfox/user.js/master/updater.sh
