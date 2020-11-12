@@ -16,7 +16,6 @@
    - uBlock origin
      - {OFF} Make use of context menu where appropriate
      - {ON} I am an advanced user
-     - {ON} Prevent WebRTC from leaking local IP addresses
      - {ON} Block CSP reports
      - Use all filterlists except those loaded via http or not for your region
      - My filters: See below
@@ -24,7 +23,6 @@
      - Default scope level: Site
      - {OFF} Clear browser cache every 60 minutes
      - {OFF} Spoof HTTP referrer string of third-party requests
-     - contributorMode = true (RawSetting)
      - remove all default rules
      - global ruleset: see [assets/uMatrix:Global_Ruleset.txt](assets/uMatrix:Global_Ruleset.txt)
    - Temporary Containers
@@ -38,9 +36,6 @@
      - Advanced > General > Ignoring requests to: _EMPTY_
      - TODO: Advanced > General > Keyboard shortcuts 
      - {ON} Statistics > Collect local statistics about Temporary Containers
-   - Smart Referer
-     - {OFF} Use default whitelist
-     - Domain name matching strictness: Strict
    - HTTPS Everywhere
      - {ON} Enable mixed content rulesets
      - {OFF} Show Devtools tab
@@ -53,13 +48,6 @@
    - CSS Exfil Protection
    - True Sight
      - Optional: {ON} enable heuristics
-   - NoScript
-     - {ON} Cascade top document's restrictions to subdocuments
-     - DEFAULT: TODO
-     - TRUSTED: TODO
-     - Per-site Permissions: _EMPTY_ (Clear default whitelist)
-     - {OFF} Appearance > Show NoScript contextual menu item
-     - FIXME: {ON} Appearance > List full addresses in the permissions popup
  - Allow uBlock origin and uMatrix in PBM
  - Delete default-containers and create your own.
  - Remove policies.json

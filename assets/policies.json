@@ -32,22 +32,6 @@
       "{7fc8ef53-24ec-4205-87a4-1e745953bb0d}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/css-exfil-protection/latest.xpi",
         "installation_mode": "normal_installed"
-      },
-      "smart-referer@meh.paranoid.pk": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/smart-referer/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "poop@cm.org": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-oriented-origin-policy/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/noscript/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "CanvasBlocker@kkapsner.de": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/canvasblocker/latest.xpi",
-        "installation_mode": "normal_installed"
       }
     },
     "NoDefaultBookmarks": true
