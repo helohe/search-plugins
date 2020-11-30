@@ -8,3 +8,4 @@ noscript-spoof: * true
 * * other block
 * * script block
 * 1st-party * allow
+* 1st-party frame allow

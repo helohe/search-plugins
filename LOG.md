@@ -17,7 +17,10 @@
      - {OFF} Make use of context menu where appropriate
      - {ON} I am an advanced user
      - {ON} Block CSP reports
-     - Use all filterlists except those loaded via http or not for your region
+     - {ON} Block remote fonts
+     - Filterlists:
+       - Use all filterlists except those loaded via http or not for your region
+       - Add https://raw.githubusercontent.com/gwarser/filter-lists/master/lan-block.txt
      - My filters: See below
    - uMatrix
      - Default scope level: Site
