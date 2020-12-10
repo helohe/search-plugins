@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>MetaGer</ShortName>
+  <Description>Privacy Protected Search @DESCRIPTION@amp; Find</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="64" height="64" type="image/x-icon">https://metager.org/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://metager.org/meta/meta.ger3">
+    <Param name="eingabe" value="{searchTerms}"/>
+  </Url>
+</OpenSearchDescription>

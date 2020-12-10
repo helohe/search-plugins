@@ -54,7 +54,7 @@
  - Allow uBlock origin and uMatrix in PBM
  - Delete default-containers and create your own.
  - Remove policies.json
- - TODO: SuMa-Plugins
+ - Add search-engines, see search-plugins/README.md
  - Import Bookmarks
 
 [`updater.sh`]: https://raw.githubusercontent.com/arkenfox/user.js/master/updater.sh

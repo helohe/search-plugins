@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>@SHORTNAME@</ShortName>
+  <Description>@DESCRIPTION@</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="@ICON-SIZE@" height="@ICON-SIZE@" type="@ICON-MIME@">@ICON-URI@</Image>
+  <Url type="text/html" method="get" template="@SEARCH-URL@">
+    <Param name="@SEARCH-PARAM@" value="{searchTerms}"/>
+  </Url>
+</OpenSearchDescription>
