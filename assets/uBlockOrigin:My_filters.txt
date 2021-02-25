@@ -1,0 +1,15 @@
+! Forbid Web-Worker
+! See https://github.com/arkenfox/user.js/wiki/4.2.2-uBlock-Origin.
+*$csp=worker-src 'none',domain=~github.com|~media.ccc.de|~www.tagesschau.de|~mail.tutanota.com
+
+! Replace third-party frames with a click2load banner
+*$3p,frame,redirect=click2load.html
+
+! Block G-fonts, it is evil
+||fonts.googleapis.com^$important
+
+! Hide ads in search results from Qwant Lite
+lite.qwant.com##article.result.web:has(.ad)
+
+! Hide GDPR consent banner on meteoblue.com
+www.meteoblue.com##.gdpr_message

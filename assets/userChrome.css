@@ -1,0 +1,2 @@
+/* identity.fxaccounts.enabled=false leaves an ugly separator in the menu */
+toolbarseparator.sync-ui-item { display: none; }

@@ -1,0 +1,5 @@
+no-csp-reports: * true
+no-remote-fonts: * true
+no-scripting: * true
+* * 3p block
+* * 3p-script block

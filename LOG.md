@@ -10,24 +10,23 @@
    - Make `updater.sh` executable if necessary.
    - Add your user-overrides.js
    - Run `./updater.sh`
+ - userChrome.css
+   - `mkdir chrome` in your profile
+   - copy `assets/userChrome.css` into `chrome`
  - Start firefox with the new profile
  - FIXME: LangPack
  - Configure Extensions
    - uBlock origin
-     - {OFF} Make use of context menu where appropriate
-     - {ON} I am an advanced user
-     - {ON} Block CSP reports
-     - {ON} Block remote fonts
-     - Filterlists:
+     - Settings:
+       - {OFF} Make use of context menu where appropriate
+       - {ON} I am an advanced user
+       - {ON} Block remote fonts
+     - Filter lists:
        - Use all filterlists except those loaded via http or not for your region
-       - Add https://raw.githubusercontent.com/gwarser/filter-lists/master/lan-block.txt
-     - My filters: See below
-   - uMatrix
-     - Default scope level: Site
-     - {OFF} Clear browser cache every 60 minutes
-     - {OFF} Spoof HTTP referrer string of third-party requests
-     - remove all default rules
-     - global ruleset: see [assets/uMatrix:Global_Ruleset.txt](assets/uMatrix:Global_Ruleset.txt)
+       - Additional lists to import:
+         - https://raw.githubusercontent.com/gwarser/filter-lists/master/lan-block.txt
+     - My filters: <assets/uBlockOrigin:My_filters.txt>
+     - My rules: <assets/uBlockOrigin:My_rules.txt>
    - Temporary Containers
      - {ON} General > Automatic Mode
      - General > Delete no longer needed Temporary Containers: 5 minutes
@@ -39,18 +38,14 @@
      - Advanced > General > Ignoring requests to: _EMPTY_
      - TODO: Advanced > General > Keyboard shortcuts 
      - {ON} Statistics > Collect local statistics about Temporary Containers
-   - HTTPS Everywhere
-     - {ON} Enable mixed content rulesets
-     - {OFF} Show Devtools tab
    - ClearURLs
      - {OFF} Allow domain blocking
      - {OFF} Display context menu entry
      - {OFF} Filters ETag headers from requests
    - Request Control
-     - Disable all rules
-   - CSS Exfil Protection
-   - True Sight
-     - Optional: {ON} enable heuristics
+     - Disable/Remove all rules
+     - Add your rules
+   - Any other Add-Ons you want like LocalCDN, Privacy-Oriented Origin Policy, True Sight, NoScript, CSS Exfil Protection, CanvasBlocker or HTTPS Everywhere.
  - Allow uBlock origin and uMatrix in PBM
  - Delete default-containers and create your own.
  - Remove policies.json
