@@ -36,6 +36,8 @@ user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true); // 17
 /* 6015: disable GMP (Gecko Media Plugins) ***/
 user_pref("media.gmp-provider.enabled", false); // 1820
 user_pref("media.gmp-manager.url", "");
+/* 6015a: limit WebGL ***/
+user_pref("webgl.min_capability_mode", true); // 2012
 /* 6016: disable website access to clipboard events/content ***/
 user_pref("dom.event.clipboardevents.enabled", false); // 2402
 /* 6017: disable Ion and baseline JIT ***/
