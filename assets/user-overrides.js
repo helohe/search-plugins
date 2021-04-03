@@ -1,8 +1,6 @@
 /*** [SECTION 6000]: OVERRIDES ***/
 user_pref("_user.js.parrot", "6000 syntax error: the parrot still keeps flying");
 
-/* 6001: disable Activity Stream recent Highlights in the Library ***/
-user_pref("browser.library.activity-stream.enabled", false); // 0105d
 /* 6002: disable auto-INSTALLING extension and theme updates ***/
 user_pref("extensions.update.autoUpdateDefault", false); // 0302b
 /* 6003: disable extension metadata ***/
@@ -260,6 +258,8 @@ user_pref("media.hardwaremediakeys.enabled", false);
 user_pref("browser.bookmarks.defaultLocation", "unfiled");
 /* 7014: always show the bookmarks toolbar ***/
 user_pref("browser.toolbars.bookmarks.visibility", "always");
+/* 7015: stop annoying me with DRM ***/
+user_pref("media.gmp-widevinecdm.visible", false);
 
 
 user_pref("_user.js.parrot", "SUCCESS: the parrot has finally reached his food");
