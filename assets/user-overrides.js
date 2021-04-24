@@ -35,7 +35,7 @@ user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true); // 17
 user_pref("media.gmp-provider.enabled", false); // 1820
 user_pref("media.gmp-manager.url", "");
 /* 6015a: limit WebGL ***/
-user_pref("webgl.min_capability_mode", true); // 2012
+user_pref("webgl.min_capability_mode", true);
 /* 6016: disable website access to clipboard events/content ***/
 user_pref("dom.event.clipboardevents.enabled", false); // 2402
 /* 6017: disable Ion and baseline JIT ***/
@@ -70,8 +70,6 @@ user_pref("_user.js.parrot", "6100 syntax error: the parrot continues");
 
 /* 6101: isolate site permissions by userContext ***/
 user_pref("permissions.isolateBy.userContext", true);
-/* 6102: enable trackingprotection in all windows ***/
-user_pref("privacy.trackingprotection.enabled", true);
 /* 6103: block insecure downloads from secure origins ***/
 user_pref("dom.block_download_insecure", true);
 /* 6104: enforce direct connection */
@@ -80,9 +78,6 @@ user_pref("network.proxy.type", 0);
 user_pref("extensions.pocket.enabled", false);
 /* 6106: disable firefox account and sync ***/
 user_pref("identity.fxaccounts.enabled", false);
-/* 6107: disable CFR ***/
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 /* 6108: disable reader-view ***/
    // user_pref("reader.parse-on-load.enabled", false);
 /* 6109: disable "Report This Extension to Mozilla" ***/
@@ -225,13 +220,6 @@ user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.tabs.allowTabDetach", false);
 /* 7004: disable usesless and annoying notification ***/
 user_pref("datareporting.policy.dataSubmissionPolicyBypassNotification", true);
-user_pref("browser.slowStartup.notificationDisabled", true);
-user_pref("browser.slowStartup.maxSamples", 0);
-user_pref("browser.slowStartup.samples", 0);
-user_pref("browser.startup.homepage_override.mstone", "ignore");
-user_pref("startup.homepage_welcome_url", "");
-user_pref("startup.homepage_welcome_url.additional", "");
-user_pref("startup.homepage_override_url", "");
 /* 7005: enable userChrome.css and userContent.css support ***/
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 /* 7006: always have bookmarks in a textual form ***/
@@ -243,9 +231,11 @@ user_pref("browser.download.dir", "~/Downloads/Firefox");
 user_pref("browser.download.lastDir", "~/Downloads/Firefox");
 /* 7009: expose Firefox Experiments on about:preferences ***/
 user_pref("browser.preferences.experimental", true);
-/* 7010: enable the new global WebRTC indicator ***/
+/* 7010a: enable the new global WebRTC indicator ***/
 user_pref("privacy.webrtc.globalMuteToggles", true);
 user_pref("privacy.webrtc.legacyGlobalIndicator", false);
+/* 7010b: hide the global WebRTC indicator ***/
+   // user_pref("privacy.webrtc.hideGlobalIndicator", true);
 /* 7011: devtools customizations ***/
 user_pref("devtools.command-button-measure.enabled", true);
 user_pref("devtools.command-button-paintflashing.enabled", true);
