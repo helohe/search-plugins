@@ -47,7 +47,7 @@ user_pref("mathml.disabled", true); // 2609
 /* 6019: disable SVG ***/
    // user_pref("svg.disabled", true); // 2610
 /* 6020: disable Firefox's built-in PDF reader ***/
-user_pref("pdfjs.disabled", true); // 2620
+    // user_pref("pdfjs.disabled", true); // 2620
 /* 6021: disable "open with" in download dialog ***/
 user_pref("browser.download.forbid_open_with", true); // 2654
 /* 6022: disable webextension restrictions on certain mozilla domains ***/
