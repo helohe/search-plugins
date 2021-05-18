@@ -1,7 +1,3 @@
-! Forbid Web-Worker
-! See https://github.com/arkenfox/user.js/wiki/4.2.2-uBlock-Origin.
-*$csp=worker-src 'none',domain=~github.com|~media.ccc.de|~www.tagesschau.de|~mail.tutanota.com
-
 ! Replace third-party frames with a click2load banner
 *$3p,frame,redirect=click2load.html
 
