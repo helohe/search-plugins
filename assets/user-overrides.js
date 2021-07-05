@@ -124,10 +124,6 @@ user_pref("gecko.handlerService.schemes.webcal.2.name", "");
 user_pref("gecko.handlerService.schemes.webcal.2.uriTemplate", "");
 user_pref("gecko.handlerService.schemes.webcal.3.name", "");
 user_pref("gecko.handlerService.schemes.webcal.3.uriTemplate", "");
-/* 6113: disabled screenshots uploads
- * screenshot uploading is no longer possible, keep as Defense-in-Depth
- * because the pref still exist ***/
-user_pref("extensions.screenshots.upload-disabled", true);
 /* 6114: treat cookies as "SameSite=Lax" by default if no "SameSite"
  * attribute is specified. ***/
 user_pref("network.cookie.sameSite.laxByDefault", true);
@@ -160,7 +156,7 @@ user_pref("_user.js.parrot", "6300 syntax error: the parrot discovers RC4 and MD
 user_pref("network.trr.mode", 3);
 /* 6302: set a DoH resolver ***/
 user_pref("network.trr.uri", ""); // TODO: Add your DNS here.
-user_pref("network.trr.bootstrapAddress", ""); // TODO: Add your DNS here.
+user_pref("network.trr.bootstrapAddr", ""); // TODO: Add your DNS here.
 /* 6303: enable DoH even if the parental control canary domain is blocked ***/
 user_pref("network.dns.skipTRR-when-parental-control-enabled", false);
 /* 6305: enable Encrypted Client Hello ***/
@@ -188,8 +184,6 @@ user_pref("keyword.enabled", true); // 0801
 user_pref("dom.disable_beforeunload", false); // 2405
 /* 6908: enable WebAssembly ***/
    // user_pref("javascript.options.wasm", true); // 2422
-/* 6909: enable Web Audio API ***/
-   // user_pref("dom.webaudio.enabled", true); // 2510
 /* 6910: relax lock down of allowed extension directories a bit ***/
 user_pref("extensions.enabledScopes", 7); // 2660
 /* 6911: disable tracker cookies and site-data ***/
@@ -213,7 +207,7 @@ user_pref("ui.prefersReducedMotion", 0); // 4520, 4614
 user_pref("_user.js.parrot", "7000 syntax error: the parrot's plumage");
 
 /* 7001: use "old" crtl+tab behaviour ***/
-user_pref("browser.ctrlTab.recentlyUsedOrder", false);
+user_pref("browser.ctrlTab.sortByRecentlyUsed", false);
 /* 7002: keep open if the last tab is closed ***/
 user_pref("browser.tabs.closeWindowWithLastTab", false);
 /* 7003: disable tab detaching ***/
@@ -250,6 +244,8 @@ user_pref("browser.bookmarks.defaultLocation", "unfiled");
 user_pref("browser.toolbars.bookmarks.visibility", "always");
 /* 7015: stop annoying me with DRM ***/
 user_pref("media.gmp-widevinecdm.visible", false);
+/* 7016: show compactmode ***/
+user_pref("browser.compactmode.show", true);
 
 
 user_pref("_user.js.parrot", "SUCCESS: the parrot has finally reached his food");
