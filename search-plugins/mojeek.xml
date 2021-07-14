@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Mojeek</ShortName>
+  <Description>The alternative search engine that puts the people who use it first</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="32" height="32" type="image/png">https://www.mojeek.com/favicon.png</Image>
+  <Url type="text/html" method="get" template="https://www.mojeek.com/search">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+</OpenSearchDescription>

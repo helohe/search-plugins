@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Searchfox</ShortName>
+  <Description>Mozilla code search website</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="52" height="52" type="image/png">https://searchfox.org/static/icons/search.png</Image>
+  <Url type="text/html" method="get" template="https://searchfox.org/mozilla-central/search">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+</OpenSearchDescription>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>DeepL</ShortName>
+  <Description>DeepL Translate</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/png">https://www.deepl.com/img/favicon/favicon_16.png</Image>
+  <Url type="text/html" method="get" template="https://www.deepl.com/translator#en/de/">
+    <Param name="" value="{searchTerms}"/>
+  </Url>
+</OpenSearchDescription>

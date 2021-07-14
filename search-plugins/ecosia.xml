@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Ecosia</ShortName>
+  <Description>The search engine that plants trees</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="64" height="64" type="image/x-icon">https://cdn-static.ecosia.org/assets/images/ico/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://www.ecosia.org/search">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+</OpenSearchDescription>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>OALD</ShortName>
+  <Description>Oxford Learner's Dictionaries</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="48" height="48" type="image/x-icon">https://www.oxfordlearnersdictionaries.com/external/images/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://www.oxfordlearnersdictionaries.com/search/american_english/">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+</OpenSearchDescription>

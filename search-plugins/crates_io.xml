@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>crates.io</ShortName>
+  <Description>The Rust community’s crate registry</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="48" height="48" type="images/x-icon">https://crates.io/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://crates.io/search">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+</OpenSearchDescription>
