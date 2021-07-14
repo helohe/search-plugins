@@ -4,8 +4,12 @@
 ! Block G-fonts, it is evil
 ||fonts.googleapis.com^$important
 
-! Hide ads in search results from Qwant Lite
-lite.qwant.com##article.result.web:has(.ad)
+! Workarounds ...
+|https://funk-02.akamaized.net/*/manifest.m3u8^$xhr,domain=zdf.de
+|https://artezdfmediathek-vh.akamaihd.net/*/master.m3u8^$xhr,domain=zdf.de
 
 ! Hide GDPR consent banner on meteoblue.com
 www.meteoblue.com##.gdpr_message
+
+! Cosmetic correction; caused by no-remote-fonts: * true
+flathub.org##.mat-icon-no-color.material-icons.hide-md.search-box-icon.notranslate.mat-icon

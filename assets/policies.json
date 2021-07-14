@@ -29,12 +29,32 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi",
         "installation_mode": "normal_installed"
       },
-      "CanvasBlocker@kkapsner.de.xpi": {
+      "CanvasBlocker@kkapsner.de": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/canvasblocker/latest.xpi",
         "installation_mode": "normal_installed"
       },
-      "user-agent-switcher@ninetailed.ninja.xpi": {
+      "user-agent-switcher@ninetailed.ninja": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/uaswitcher/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "smart-referer@meh.paranoid.pk": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/smart-referer/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "headereditor-amo@addon.firefoxcn.net": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/header-editor/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "enterprise-policy-generator@agenedia.com": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/enterprise-policy-generator/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "{7799824a-30fe-4c67-8b3e-7094ea203c94}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/rsspreview/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "smart-rss@mozilla.firefox": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/smart-rss-reader/latest.xpi",
         "installation_mode": "normal_installed"
       }
     },
