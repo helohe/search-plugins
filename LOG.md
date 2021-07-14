@@ -23,8 +23,6 @@
        - {ON} Block remote fonts
      - Filter lists:
        - Use all filterlists except those loaded via http or not for your region
-       - Additional lists to import:
-         - https://raw.githubusercontent.com/gwarser/filter-lists/master/lan-block.txt
      - My filters: <assets/uBlockOrigin:My_filters.txt>
      - My rules: <assets/uBlockOrigin:My_rules.txt>
    - Temporary Containers
@@ -32,7 +30,6 @@
      - General > Delete no longer needed Temporary Containers: 5 minutes
      - General > Toolbar Icon Color: black (simple)
      - Isolation > Global > Navigation > Different from Tab Domain & Subdomain
-     - Advanced > General > Automatic Mode: Don't instantly reopen new tabs in Temporary Containers but instead when new tabs start to navigate to a website. Already typed characters in the address bar are never lost, but new tabs can set and read cookies in the default container
      - Advanced > General > Popup > Default Tab: Isolation Per Domain
      - {ON} Advanced > Popup > Show icon in the address bar that reveals the popup
      - Advanced > General > Ignoring requests to: _EMPTY_
@@ -46,7 +43,7 @@
      - Disable/Remove all rules
      - Add your rules
    - Any other Add-Ons you want like LocalCDN, Privacy-Oriented Origin Policy, True Sight, NoScript, CSS Exfil Protection, CanvasBlocker or HTTPS Everywhere.
- - Allow uBlock origin and uMatrix in PBM
+ - Allow uBlock origin in PBM
  - Delete default-containers and create your own.
  - Remove policies.json
  - Add search-engines, see search-plugins/README.md
