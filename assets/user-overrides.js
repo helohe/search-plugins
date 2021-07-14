@@ -10,8 +10,6 @@ user_pref("browser.safebrowsing.malware.enabled", false); // 0410
 user_pref("browser.safebrowsing.phishing.enabled", false); // 0410
 /* 6005: disable Screenshots ***/
    // user_pref("extensions.screenshots.disabled", true); // 0515
-/* 6006: disable FTP ***/
-user_pref("network.ftp.enabled", false); // 0708
 /* 6007: disable location bar suggestion types ***/
 user_pref("browser.urlbar.suggest.history", false); // 0850a
    // user_pref("browser.urlbar.suggest.bookmark", false); // 0850a
@@ -27,8 +25,10 @@ user_pref("permissions.memory_only", true); // 1006
    // user_pref("browser.chrome.site_icons", false); // 1031
 /* 6012: Disable OCSP (enhance privacy, bites DoH) ***/
 user_pref("security.OCSP.enabled", 0); // 1211
-/* 6013: disable intermediate certificate caching ***/
-user_pref("security.nocertdb", true); // 1222
+/* 6013: disable intermediate certificate caching
+ * [WARNING] Do NOT use. It breaks add-on signature verification.
+ * You will need to use 6110 too. ***/
+    // user_pref("security.nocertdb", true); // 1222
 /* 6014: set behaviour on "+ Tab" button to display container menu on left click ***/
 user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true); // 1703
 /* 6015: disable GMP (Gecko Media Plugins) ***/
@@ -215,7 +215,7 @@ user_pref("browser.tabs.allowTabDetach", false);
 /* 7004: disable usesless and annoying notification ***/
 user_pref("datareporting.policy.dataSubmissionPolicyBypassNotification", true);
 /* 7005: enable userChrome.css and userContent.css support ***/
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+   // user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 /* 7006: always have bookmarks in a textual form ***/
 user_pref("browser.bookmarks.autoExportHTML", true);
 /* 7007: reset to Mozilla Firefox default, changed by RedHat ***/
@@ -231,6 +231,7 @@ user_pref("privacy.webrtc.legacyGlobalIndicator", false);
 /* 7010b: hide the global WebRTC indicator ***/
    // user_pref("privacy.webrtc.hideGlobalIndicator", true);
 /* 7011: devtools customizations ***/
+user_pref("devtools.aboutdebugging.showHiddenAddons", true);
 user_pref("devtools.command-button-measure.enabled", true);
 user_pref("devtools.command-button-paintflashing.enabled", true);
 user_pref("devtools.command-button-rulers.enabled", true);
