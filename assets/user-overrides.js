@@ -34,10 +34,8 @@ user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true); // 17
 /* 6015: disable GMP (Gecko Media Plugins) ***/
 user_pref("media.gmp-provider.enabled", false); // 1820
 user_pref("media.gmp-manager.url", "");
-/* 6015a: limit WebGL ***/
-user_pref("webgl.min_capability_mode", true);
 /* 6016: disable website access to clipboard events/content ***/
-user_pref("dom.event.clipboardevents.enabled", false); // 2402
+   // user_pref("dom.event.clipboardevents.enabled", false); // 2402
 /* 6017: disable Ion and baseline JIT ***/
 user_pref("javascript.options.ion", false); // 2421
 user_pref("javascript.options.baselinejit", false); // 2421
@@ -124,14 +122,6 @@ user_pref("gecko.handlerService.schemes.webcal.2.name", "");
 user_pref("gecko.handlerService.schemes.webcal.2.uriTemplate", "");
 user_pref("gecko.handlerService.schemes.webcal.3.name", "");
 user_pref("gecko.handlerService.schemes.webcal.3.uriTemplate", "");
-/* 6114: treat cookies as "SameSite=Lax" by default if no "SameSite"
- * attribute is specified. ***/
-user_pref("network.cookie.sameSite.laxByDefault", true);
-/* 6115: cookies with "SameSite=None" attribute require the secure attribute ***/
-user_pref("network.cookie.sameSite.noneRequiresSecure", true);
-/* 6116: treat cookies from the same domain, but with different schemes
- * as cross-site instead of same-site ***/
-user_pref("network.cookie.sameSite.schemeful", true);
 
 
 /*** [SECTION 6200]: Language ***/
@@ -172,10 +162,10 @@ user_pref("_user.js.parrot", "6900 syntax error: the parrot is the flying dead")
 /* 6901: enable location bar using search ***/
 user_pref("keyword.enabled", true); // 0801
 /* 6903: enable WebRTC ***/
-   // user_pref("media.peerconnection.enabled", true); // 2001
+user_pref("media.peerconnection.enabled", true); // 2001
 /* 6904: enable WegGL ***/
-   // user_pref("webgl.disabled", false); // 2010
-   // user_pref("webgl.enable-webgl2", true); // 2010
+   // user_pref("webgl.disabled", false); // 2522
+   // user_pref("webgl.enable-webgl2", true); // 2522
 /* 6905: restrict autoplay of HTML5 media if you interacted with the site ***/
    // user_pref("media.autoplay.blocking_policy", 1); // 2031
 /* 6906: allow autoplay of HTML5 media if you interacted with the site ***/
