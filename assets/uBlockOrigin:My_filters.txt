@@ -1,12 +1,12 @@
 ! Replace third-party frames with a click2load banner
-*$3p,frame,redirect=click2load.html
+*$3p,frame,redirect=click2load.html,domain=~www.tagesschau.de
 
 ! Block G-fonts, it is evil
 ||fonts.googleapis.com^$important
 
 ! Workarounds ...
-|https://funk-02.akamaized.net/*/manifest.m3u8^$xhr,domain=zdf.de
-|https://artezdfmediathek-vh.akamaihd.net/*/master.m3u8^$xhr,domain=zdf.de
+|https://funk-02.akamaized.net/*/manifest.m3u8^$xhr,domain=zdf.de,important
+|https://artezdfmediathek-vh.akamaihd.net/*/master.m3u8^$xhr,domain=zdf.de,important
 
 ! Hide GDPR consent banner on meteoblue.com
 www.meteoblue.com##.gdpr_message
