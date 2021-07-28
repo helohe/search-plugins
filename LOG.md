@@ -41,7 +41,7 @@
      - {OFF} Filters ETag headers from requests
    - Request Control
      - Disable/Remove all rules
-     - Add your rules
+     - Import <assets/request-control-rules.json>
    - Any other Add-Ons you want like LocalCDN, Privacy-Oriented Origin Policy, True Sight, NoScript, CSS Exfil Protection, CanvasBlocker or HTTPS Everywhere.
  - Allow uBlock origin in PBM
  - Delete default-containers and create your own.

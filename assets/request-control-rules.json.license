@@ -1,0 +1,6 @@
+Some of the rules in request-control-rules.json are based on default rules from
+RequestControl which are MPL-2.0 licensed and rules from ClearURLs which are
+LGPLv3 licensed.
+
+https://github.com/tumpio/requestcontrol/tree/master/rules
+https://gitlab.com/anti-tracking/ClearURLs/rules/-/blob/master/data.min.json
