@@ -29,6 +29,8 @@ user_pref("security.OCSP.enabled", 0); // 1211
  * [WARNING] Do NOT use. It breaks add-on signature verification.
  * You will need to use 6110 too. ***/
     // user_pref("security.nocertdb", true); // 1222
+/* 6013a: enable HTTPS-Only mode for local resources ***/
+user_pref("dom.security.https_only_mode.upgrade_local", true); // 1245
 /* 6014: set behaviour on "+ Tab" button to display container menu on left click ***/
 user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true); // 1703
 /* 6015: disable GMP (Gecko Media Plugins) ***/
