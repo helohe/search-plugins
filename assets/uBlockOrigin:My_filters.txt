@@ -12,4 +12,4 @@
 www.meteoblue.com##.gdpr_message
 
 ! Cosmetic correction; caused by no-remote-fonts: * true
-flathub.org##.mat-icon-no-color.material-icons.hide-md.search-box-icon.notranslate.mat-icon
+flathub.org##.search-box-icon

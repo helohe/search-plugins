@@ -20,13 +20,14 @@
         "/\\/(ap_resize\\/ap_resize|image|imageproxy|resizer\\/resizer|safe_image)(.php)?\\?/",
         "/\\/(i|fetch|image_gallery|thumb|thumbnail)(\\.php|\\/)?\\?|\\?img_?[iI]d=/",
         "/\\?.*\\&(_nc_[a-z]{1,3}|oh|oe)=./",
-        "/download/file.php?avatar=",
-        "://c.disquscdn.com/get?url=",
+        "/download/file.php\\?avatar=",
         "/:\\/\\/s[12]\\.qwant\\.com\\/thumbr\\//",
-        "://external-content.duckduckgo.com/iu/?",
-        "://mailfence.com/sw?",
+        "://c.disquscdn.com/get\\?url=",
+        "://external-content.duckduckgo.com/iu/\\?",
+        "://mailfence.com/sw\\?",
         "://streetviewpixels-pa.googleapis.com/v1/tile",
         "://web.whatsapp.com/pp",
+        "://www.bbk.bund.de/",
         "://www.youtube.com/api/stats/watchtime"
       ]
     },
@@ -302,7 +303,7 @@
   {
     "title": "DuckDuckGo image serach",
     "uuid": "8880456f-83c0-43a1-b994-b22a7b34f4f4",
-    "active": true,
+    "active": false,
     "pattern": {
       "scheme": "*",
       "host": [
@@ -576,7 +577,7 @@
   {
     "title": "Qwant image search",
     "uuid": "03c52ef0-da16-4f4f-91e9-3de417676edf",
-    "active": true,
+    "active": false,
     "pattern": {
       "scheme": "*",
       "host": [
@@ -682,10 +683,12 @@
     "pattern": {
       "allUrls": true,
       "excludes": [
-        "*/ucp.php?mode=logout&sid=*",
         "/^https?:\\/\\/10\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\//",
         "/^https?:\\/\\/192\\.168\\.[0-9]{1,3}\\.[0-9]{1,3}\\//",
-        "https://www.fbsbx.com/captcha/recaptcha/iframe/*"
+        "/ucp.php\\?mode=logout&sid=*",
+        "://gitlab.com/*/-/refs/switch\\?destination=*&path=&ref=*",
+        "://www.fbsbx.com/captcha/recaptcha/iframe/",
+        "://fritz.box/"
       ]
     },
     "types": [
@@ -1459,6 +1462,25 @@
     ],
     "action": "redirect",
     "redirectUrl": "https://www.youtube.com/watch?v={pathname:1}{search/^\\?/&}{hash}"
+  },
+  {
+    "title": "Remove jsessionid parameter from www.bbk.bund.de",
+    "uuid": "06880e4e-3c90-4e2d-b8b0-36546aa23600",
+    "active": true,
+    "pattern": {
+      "scheme": "*",
+      "host": [
+        "www.bbk.bund.de"
+      ],
+      "path": [
+        "*"
+      ]
+    },
+    "types": [
+      "main_frame"
+    ],
+    "action": "redirect",
+    "redirectUrl": "{href/;jsessionid=.*//}"
   },
   {
     "title": "Skip Amazon Picasso redirect",
