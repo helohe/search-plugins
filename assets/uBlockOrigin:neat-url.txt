@@ -1,6 +1,5 @@
-! neat-url
-! --------
-!
+[uBlock Origin]
+! Title: neat-url
 ! Upstream: https://gitlab.com/Cyprias/neat-url/-/blob/master/src/index.js
 ! License: https://gitlab.com/Cyprias/neat-url/-/blob/master/LICENSE (MIT)
 

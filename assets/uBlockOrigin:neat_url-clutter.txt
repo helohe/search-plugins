@@ -1,5 +1,5 @@
-! clutter from NetURL's issue tracker
-! -----------------------------------
+[uBlock Origin]
+! Title: clutter from NetURL's issue tracker
 
 ! https://github.com/Smile4ever/Neat-URL/pull/181
 ||amazon.*^$removeparam=ascsubtag

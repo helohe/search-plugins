@@ -1,11 +1,8 @@
-! ClearURLs
-! ---------
-!
+[uBlock Origin]
+! Title: ClearURLs
 ! Upstream: https://gitlab.com/anti-tracking/ClearURLs/rules/-/blob/master/data.min.json
 ! License: https://gitlab.com/anti-tracking/ClearURLs/rules/-/blob/master/LICENSE (LGPL-3.0)
 ! TODO: Exceptions
-
-! NOTE for me: redirections + rawRules -> RC
 
 $removeparam=/^utm(_[a-z_]*)?=/
 $removeparam=/^ga_[a-z_]+=/

@@ -1,6 +1,5 @@
-! NeatURL
-! -------
-!
+[uBlock Origin]
+! Titel: NeatURL
 ! Upstream: https://github.com/Smile4ever/Neat-URL/blob/master/data/default-params-by-category.json
 ! License: https://github.com/Smile4ever/Neat-URL/issues/155
 
