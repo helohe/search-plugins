@@ -1,0 +1,60 @@
+// 0304: disable auto-INSTALLING extension and theme updates
+extensions.update.autoUpdateDefault
+
+// 0401: disable SB (Safe Browsing)
+browser.safebrowsing.malware.enabled
+browser.safebrowsing.phishing.enabled
+
+// 0810: disable coloring of visited links
+layout.css.visited_links_enabled
+
+// 1245: enable HTTPS-Only mode for local resources
+dom.security.https_only_mode.upgrade_local
+
+// 2020: disable GMP (Gecko Media Plugins)
+media.gmp-provider.enabled
+
+// 2030: disable autoplay of HTML5 media
+media.autoplay.default
+
+// 2662: disable webextension restrictions on certain mozilla domains
+extensions.webextensions.restrictedDomains
+
+// 4002: enforce FPI restriction for window.opener
+privacy.firstparty.isolate.block_post_message
+
+// 5003: disable saving passwords
+signon.rememberSignons
+
+// 5004: disable permissions manager from writing to disk
+permissions.memory_only
+
+// 5005: disable intermediate certificate caching
+//security.nocertdb
+
+// 5006: disable favicons in history and bookmarks
+//browser.chrome.site_icons
+
+// 5009: disable "open with" in download dialog
+browser.download.forbid_open_with
+
+// 5010: disable location bar suggestion types
+browser.urlbar.suggest.openpage
+browser.urlbar.suggest.topsites
+
+// 5013: disable browsing and download history
+places.history.enabled
+
+// 5503: disable graphite
+//gfx.font_rendering.graphite.enabled
+
+// 5504: disable asm.js
+javascript.options.asmjs
+
+// 5505: disable Ion and baseline JIT to harden against JS exploits
+javascript.options.ion
+javascript.options.baselinejit
+javascript.options.jit_trustedprincipals
+
+// 5506: disable WebAssembly
+javascript.options.wasm
