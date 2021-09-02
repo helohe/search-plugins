@@ -1,0 +1,86 @@
+! clutter from NetURL's issue tracker
+! -----------------------------------
+
+! https://github.com/Smile4ever/Neat-URL/pull/181
+||amazon.*^$removeparam=ascsubtag
+
+! https://github.com/Smile4ever/Neat-URL/pull/170#issuecomment-619906829
+||aliexpress.com^$removeparam=ws_ab_test
+||aliexpress.com^$removeparam=algo_expid
+||aliexpress.com^$removeparam=algo_pvid
+||aliexpress.com^$removeparam=initiative_id
+||aliexpress.com^$removeparam=gps-id
+||aliexpress.com^$removeparam=gps_id
+||aliexpress.com^$removeparam=scm_id
+||aliexpress.com^$removeparam=scm-url
+||aliexpress.com^$removeparam=scm_url
+||aliexpress.com^$removeparam=expid
+||aliexpress.com^$removeparam=pvid
+||aliexpress.com^$removeparam=pid
+
+! https://github.com/Smile4ever/Neat-URL/issues/253
+$removeparam=/^[a-z0-9]{26}=[a-z0-9]{26}$/
+
+! https://github.com/Smile4ever/Neat-URL/issues/250
+$removeparam=at_campaign
+$removeparam=at_custom1
+$removeparam=at_custom2
+$removeparam=at_custom3
+$removeparam=at_custom4
+$removeparam=at_medium
+$removeparam=ncid
+$removeparam=recruited_by_id
+$removeparam=recruiter
+$removeparam=ref_
+$removeparam=rss
+$removeparam=soc_src
+$removeparam=soc_trk
+$removeparam=tsrc
+$removeparam=twclid
+$removeparam=xtor
+
+! https://github.com/Smile4ever/Neat-URL/issues/246
+$removeparam=/^stm_[a-z_]*/
+
+! https://github.com/Smile4ever/Neat-URL/issues/241
+||www.linkedin.com/comm/jobs/view^$removeparam
+
+! https://github.com/Smile4ever/Neat-URL/issues/235
+||tiktok.com^$removeparam=preview_pb
+||tiktok.com^$removeparam=_d
+||tiktok.com^$removeparam=share_item_id
+||tiktok.com^$removeparam=timestamp
+||tiktok.com^$removeparam=user_id
+||tiktok.com^$removeparam=tt_from
+||tiktok.com^$removeparam=source
+
+! https://github.com/Smile4ever/Neat-URL/issues/225
+||youtube.com^$removeparam=gclid
+$removeparam=terminal_id
+$removeparam=ns_campaign
+$removeparam=ns_source
+$removeparam=ns_linkname
+$removeparam=ns_mchannel
+$removeparam=ns_fee
+$removeparam=ocid
+$removeparam=xtor
+$removeparam=srnd
+||imdb.com^$removeparam=ref_
+||theguardian.com^$removeparam=CMP
+||medium.com^$removeparam=source
+||medium.com^$removeparam=_branch_match_id
+||wired.com^$removeparam=mbid
+||bbc.co.uk^$removeparam=at_campaign
+||bbc.co.uk^$removeparam=at_custom
+||bbc.co.uk^$removeparam=at_custom1
+||bbc.co.uk^$removeparam=at_custom2
+||bbc.co.uk^$removeparam=at_custom3
+||bbc.co.uk^$removeparam=at_custom4
+||bbc.co.uk^$removeparam=at_medium
+
+! https://github.com/Smile4ever/Neat-URL/issues/199
+$removeparam=sPartner
+$removeparam=campaign
+$removeparam=wt_mc
+$removeparam=utm_id
+$removeparam=wt_zmc
