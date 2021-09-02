@@ -1,5 +1,28 @@
+! This is not a comment, this is a invalid line which gets silently dropped
+! by uB if you paste into your dynamic filter rules
+
+! Global defaults for site switches
 no-csp-reports: * true
 no-remote-fonts: * true
 no-scripting: * true
+
+! Blocking mode: hard mode with click2load 3p-frames
 * * 3p block
 * * 3p-script block
+
+! Block behind-the-scene
+behind-the-scene * * block
+
+! Global CDN noops for common CDNs (mostly via CNAME)
+* akamai.net * noop
+* akamaiedge.net * noop
+* akamaihd.net * noop
+* akamaized.net * noop
+* b-cdn.net * noop
+* cdn.cloudflare.net * noop
+* cloudfront.net * noop
+* edgecastcdn.net * noop
+* global.fastly.net * noop
+* map.fastly.net * noop
+* netdna-ssl.com * noop
+* wp.com * noop
