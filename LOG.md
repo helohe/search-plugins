@@ -22,7 +22,7 @@
        - Use all filterlists except those loaded via http or not for your region
        - Import additional filterlists:
          ```
-         https://gitlab.com/rusty-snake/firefox-config/-/blob/master/assets/uBlockOrigin:queryprune.txt
+         https://gitlab.com/rusty-snake/firefox-config/-/raw/master/assets/uBlockOrigin:queryprune.txt
          ```
      - My filters: [uBlockOrigin:My_filters.txt]
      - My rules: [uBlockOrigin:My_rules.txt]
