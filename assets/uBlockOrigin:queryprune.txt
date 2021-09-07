@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: URL Tracking Protection - collected from different source (CLearURLS, Neat Url, …) - expect overblocking
 
-$removeparam=/^(ga|hmb|itm|mtm|otm|pk|sc|utm|wt)_.*/
+$removeparam=/^(hmb|itm|otm|sc)_.*/
 $removeparam=/^.*campaign.*=/
 $removeparam=/^[a-z]?mc=/
 $removeparam=/^vn(_[a-z]*)+=/
@@ -73,7 +73,6 @@ $domain=taobao.com|tmall.com,removeparam=/^(abbucket|abtest|acm|algo_expid|algo_
 ||argos.co.uk^$removeparam=/^(clickOrigin|istBid|istCompanyId|istFeedId|istItemId)=/
 ||autoplus.fr^$removeparam=/^(dr_tracker|hash|idprob|sending_id|site_id)=/
 ||backcountry.com^$removeparam=/^(CMP_ID|CMP_SKU|fl|INT_ID|iv_|k_clickid|MER|mr:adType|mr:device|mr:referralID|mr:trackingCode|rmatt|ti)=/
-||bahn.de^$removeparam=/^dbkanal_[0-9]+=/
 ||bestbuy.com^$removeparam=/^(acampID|intl|irclickid|irgwc|loc|mpid)=/
 ||bigfishgames.com^$removeparam=/^(npc|npi|npv[0-9]+|pc)=/
 ||bilibili.com^$removeparam=/^(callback|from|from_source|seid|spm_id_from)=/
@@ -97,10 +96,6 @@ $domain=taobao.com|tmall.com,removeparam=/^(abbucket|abtest|acm|algo_expid|algo_
 ||giphy.com^$removeparam=ref
 ||github.com^$removeparam=/^(email_source|email_token)=/
 ||gog.com^$removeparam=/^(link_id|track_click)=/
-||google.*^$removeparam=/^(el|gws_rd|sel|source|usp|ved)=/
-||google.*^$removeparam=/^(gs_gbg|gs_mss|gs_rn|gws_rd|sei|ved)=/
-||google.*$removeparam=/^(ved|bi[a-z]*|gfe_[a-z]*|source|gs_[a-z]*|site|oq|esrc|uact|cd|cad|gws_[a-z]*|atyp|vet|zx|_u|je|dcr|ie|sei|sa|dpr|btn[a-z]*|usg|cd|cad|uact|aqs|souceid|sxsrf|rlz|i-would-rather-use-firefox|referrer)=/
-||google.*/search?$removeparam=/^(client|sclient)=/
 ||healio.com^$removeparam=/^(ecp|m_bt)=/
 ||hh.ru^$removeparam=/^(exp|grpos|plim|ptl|stl|swnt|t|vss)=/
 ||humblebundle.com^$removeparam=partner
@@ -112,7 +107,6 @@ $domain=taobao.com|tmall.com,removeparam=/^(abbucket|abtest|acm|algo_expid|algo_
 ||maps.api.here.com/maptile/2.1/maptile/$removeparam=~/^(app_code|app_id|lg|token)=/
 ||maps.cit.api.here.com/maptile/2.1/maptile/$removeparam=~/^(app_code|app_id|lg|token)=/
 ||marketscreener.com^$removeparam=/^(aComposeInputSearch|add_mots|countview|lien|mots|RewriteLast|type_recherche|type_recherche_forum)=/
-||medium.com^$removeparam=source
 ||meetup.com^$removeparam=/^(rv|_xtd)=/
 ||moosejaw.com^$removeparam=/^(cm_lm|cm_mmc|spJobID|spMailingID|spReportId|spUserID|webUserId)=/
 ||mozilla.org^$removeparam=/^(platform|redirect_source|src)=/
@@ -136,13 +130,11 @@ $domain=taobao.com|tmall.com,removeparam=/^(abbucket|abtest|acm|algo_expid|algo_
 ||shutterstock.com^$removeparam=src
 ||snapchat.com^$removeparam=/^(sc_referrer|sc_ua)=/
 ||sourceforge.net^$removeparam=/^(position|source)=/
-||spiegel.de^$removeparam=b
 ||spotify.com^$removeparam=si
 ||steampowered.com^$removeparam=snr
 ||styles.redditmedia.com/*/styles/bannerBackgroundImage_*$removeparam
 ||styles.redditmedia.com/*/styles/communityIcon_*$removeparam
 ||support.mozilla.org^$removeparam=as
-||swp.de^$removeparam=source
 ||tb.cn^$removeparam=sm
 ||tchibo.de^$removeparam=wbdcd
 ||techcrunch.com^$removeparam=/^(ncid|sr|sr_share)=/
@@ -158,6 +150,17 @@ $domain=taobao.com|tmall.com,removeparam=/^(abbucket|abtest|acm|algo_expid|algo_
 ||wps.com^$removeparam=/^from=/
 ||yandex.*^$removeparam=/^(lr|redircnt)=/
 ||youku.com^$removeparam=tpa
-||youtube.com^$removeparam=/^(ab_channel|app|attr_tag|feature|kw|sp)=/
+||youtube.com^$removeparam=/^(ab_channel|attr_tag|kw|sp)=/
 ||zillow.com^$removeparam=rtoken
 ||zoho.com^$removeparam=iref
+
+
+$removeparam=/^(ga|mtm|pk|utm|wt)_.*/
+
+||abo.spiegel.de/$removeparam
+||bahn.de^$removeparam=/^dbkanal_[0-9]+=/
+||heise.de^$removeparam=wt_mc
+||medium.com^$removeparam=source
+||swp.de^$removeparam=source
+||youtube.com^$removeparam=app
+||youtube.com^$removeparam=feature
