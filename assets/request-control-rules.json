@@ -124,7 +124,22 @@
       "scheme": "*",
       "host": [
         "*.tradedoubler.com",
+        "alabout.com",
+        "click.redditmail.com",
+        "digidip.net",
+        "disq.us",
+        "dpbolvw.net",
+        "effiliation.com",
+        "exactag.com",
+        "flexlinkspro.com",
+        "gate.sc",
+        "getpocket.com",
+        "googleadservices.com",
+        "mailtrack.io",
         "out.reddit.com",
+        "rutracker.org",
+        "smartredirect.de",
+        "srvtrck.com",
         "steamcommunity.com"
       ],
       "path": [
