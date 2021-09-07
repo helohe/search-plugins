@@ -4,18 +4,12 @@
 ! License: https://github.com/tumpio/requestcontrol/blob/master/LICENSE (MPL-2.0)
 
 ||youtube.com^$removeparam=sp
-||maps.api.here.com/maptile/2.1/maptile/$removeparam=app_code
-||maps.api.here.com/maptile/2.1/maptile/$removeparam=app_id
-||maps.api.here.com/maptile/2.1/maptile/$removeparam=lg
-||maps.api.here.com/maptile/2.1/maptile/$removeparam=token
-||maps.cit.api.here.com/maptile/2.1/maptile/$removeparam=app_code
-||maps.cit.api.here.com/maptile/2.1/maptile/$removeparam=app_id
-||maps.cit.api.here.com/maptile/2.1/maptile/$removeparam=lg
-||maps.cit.api.here.com/maptile/2.1/maptile/$removeparam=token
+||maps.api.here.com/maptile/2.1/maptile/$removeparam=~/^(app_code|app_id|lg|token)=/
+||maps.cit.api.here.com/maptile/2.1/maptile/$removeparam=~/^(app_code|app_id|lg|token)=/
 ||google.*^$removeparam=/^(el|gws_rd|sel|source|usp|ved)=/
 ||facebook.com^$removeparam=/^(_.*|extid|flite|fref|mt_nav|ref|referral_code|refsrc|rid|rt|sfnsn)=/
 ||bing.com^$removeparam=/^(cvid|ehk|from|lg|pq|qs|ru|sc|sk|sp)=/
-||amazon.*^$removeparam=/^(_encoding|arb|cartInitiateId|claimToken|clientContext|field-brandtextbin|field-keywords|fromAnywhere|i|ie|intercept|isToBeGiftWrappedBefore|k|language|location|mgh|node|openid\..*|pageId|partialCheckoutCart|proceedToCheckout|proceedToRetailCheckout|rh|url)=/
+||amazon.*^$removeparam=~/^(_encoding|arb|cartInitiateId|claimToken|clientContext|field-brandtextbin|field-keywords|fromAnywhere|i|ie|intercept|isToBeGiftWrappedBefore|k|language|location|mgh|node|openid\..*|pageId|partialCheckoutCart|proceedToCheckout|proceedToRetailCheckout|rh|url)=/
 !@@||amazon.*/ap/$removeparam
 !@@||amazon.*/gp/$removeparam
 ||styles.redditmedia.com/*/styles/bannerBackgroundImage_*$removeparam

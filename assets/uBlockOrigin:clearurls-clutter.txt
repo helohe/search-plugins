@@ -1,0 +1,51 @@
+[uBlock Origin]
+! Title: clutter from ClearURLs issue tracker
+
+! https://gitlab.com/anti-tracking/ClearURLs/rules/-/merge_requests/14/diffs
+||hs.fi^$removeparam=share
+
+! https://gitlab.com/anti-tracking/ClearURLs/rules/-/merge_requests/10/diffs
+||fiverr.com^$removeparam=context_referrer
+||fiverr.com^$removeparam=source
+||fiverr.com^$removeparam=ref_ctx_id
+||fiverr.com^$removeparam=funnel
+
+! https://gitlab.com/anti-tracking/ClearURLs/rules/-/merge_requests/9/diffs
+||yle.fi^$removeparam=origin
+
+! https://gitlab.com/anti-tracking/ClearURLs/rules/-/merge_requests/5/diffs
+||flipkart.com^$removeparam=otracker
+||flipkart.com^$removeparam=otracker.
+||flipkart.com^$removeparam=ssid
+||flipkart.com^$removeparam=/^[cilp]id=/
+||flipkart.com^$removeparam=marketplace
+||flipkart.com^$removeparam=store
+||flipkart.com^$removeparam=srno
+||flipkart.com^$removeparam=store
+||flipkart.com^$removeparam=ppn
+||flipkart.com^$removeparam=ppt
+||flipkart.com^$removeparam=fm
+||flipkart.com^$removeparam=collection-tab-name
+||flipkart.com^$removeparam=/^sattr\[\]=/
+||flipkart.com^$removeparam=/^p\[\]=/
+||flipkart.com^$removeparam=st
+
+! https://gitlab.com/anti-tracking/ClearURLs/rules/-/merge_requests/3/diffs
+||amazon.*^$removeparam=ascsubtag
+
+! https://gitlab.com/anti-tracking/ClearURLs/rules/-/merge_requests/1/diffs
+$removeparam=elqTrackId
+$removeparam=elqTrack
+$removeparam=elqCampaignId
+$removeparam=elqaid
+$removeparam=elqat
+
+! https://gitlab.com/anti-tracking/ClearURLs/rules/-/issues/28
+$removeparam=cid
+$removeparam=/^(utm_reader|utm_place|utm_userid|utm_cid|utm_name|utm_pubreferrer|utm_swu|utm_viz_id|ga_source|ga_medium|ga_term|ga_content|ga_campaign|ga_place|yclid|_openstat|fb_action_ids|fb_action_types|fb_ref|fb_source|action_object_map|action_type_map|action_ref_map|gs_l||_hsenc|mkt_tok|hmb_campaign|hmb_medium|hmb_source|elqTrackId|elqTrack|assetType|assetId|recipientId|campaignId|siteId|aff_platform|aff_trace_key|terminal_id|_hsmi|campaign|dm_i|pid|clickdate|awc|ProvID|epid|hash|ref|camp|ie|creative|linkCode|creativeASIN|linkId|Offer|affil|wt_mc)=/
+
+! https://gitlab.com/anti-tracking/ClearURLs/rules/-/issues/27
+$removeparam=pcampaignid
+
+! https://gitlab.com/anti-tracking/ClearURLs/rules/-/issues/126
+||nytimes.com^$removeparam=referringSource
