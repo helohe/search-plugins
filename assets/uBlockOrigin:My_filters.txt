@@ -7,9 +7,14 @@
 ! Workarounds ...
 |https://funk-02.akamaized.net/*/manifest.m3u8^$xhr,domain=zdf.de,important
 |https://artezdfmediathek-vh.akamaihd.net/*/master.m3u8^$xhr,domain=zdf.de,important
+|https://funk-02dd.akamaized.net^$document,removeparam=fv
 
-! Hide GDPR consent banner on meteoblue.com
+! Hide GDPR consent banners
 www.meteoblue.com##.gdpr_message
+stackoverflow.com##.js-consent-banner
 
 ! Cosmetic correction; caused by no-remote-fonts: * true
 flathub.org##.search-box-icon
+
+! No, I don't want to see this all the time
+gitlab.com##.js-autodevops-banner

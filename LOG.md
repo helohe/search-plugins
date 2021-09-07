@@ -40,10 +40,6 @@
      - Advanced > General > Ignoring requests to: _EMPTY_
      - TODO: Advanced > General > Keyboard shortcuts 
      - {ON} Statistics > Collect local statistics about Temporary Containers
-   - ClearURLs
-     - {OFF} Allow domain blocking
-     - {OFF} Display context menu entry
-     - {OFF} Filters ETag headers from requests
    - Request Control
      - Disable/Remove all rules
      - Import [request-control-rules.json]
@@ -54,7 +50,7 @@
        - {ON} Auto-submit login forms
      - {OFF} Saving credentials > Show a banner on the page when new credentials can be saved to the database.
      - Updates > Check for updates of KeePassXC: never
-   - Any other Add-Ons you want like LocalCDN, Privacy-Oriented Origin Policy, True Sight, NoScript, CSS Exfil Protection, CanvasBlocker or HTTPS Everywhere.
+   - Any other Add-Ons you want like ClearURLs, LocalCDN, Privacy-Oriented Origin Policy, True Sight, NoScript, CSS Exfil Protection, CanvasBlocker or HTTPS Everywhere.
  - Allow uBlock origin in PBM
  - Delete default-containers and create your own.
  - Remove policies.json

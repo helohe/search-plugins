@@ -17,6 +17,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/temporary-containers/latest.xpi",
         "installation_mode": "normal_installed"
       },
+      "skipredirect@sblask.xpi": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/skip-redirect/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "https-everywhere@eff.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/https-everywhere/latest.xpi",
         "installation_mode": "normal_installed"
@@ -57,7 +61,6 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/smart-rss-reader/latest.xpi",
         "installation_mode": "normal_installed"
       }
-    },
-    "NoDefaultBookmarks": true
+    }
   }
 }
