@@ -212,6 +212,8 @@ SEARCH_ENGINES=(
 	WIKIPEDIA
 )
 
+cd -P -- "$(readlink -e "$(dirname "$0")")"/..
+
 echo "<!DOCTYPE html><html><head><meta charset=\"utf-8\" />" > index.html
 
 for search_engine in "${SEARCH_ENGINES[@]}"; do
@@ -232,8 +234,8 @@ for search_engine in "${SEARCH_ENGINES[@]}"; do
 		-e "s|@ICON-URI@|$icon_uri|" \
 		-e "s|@SEARCH-URL@|$search_url|" \
 		-e "s|@SEARCH-PARAM@|$search_param|" \
-		opensearch.xml.in > "$file_name"
-	echo "<link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"$short_name\" href=\"$file_name\" />" >> index.html
+		source/opensearch.xml.in > "plugins/$file_name"
+	echo "<link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"$short_name\" href=\"plugins/$file_name\" />" >> index.html
 done
 
 echo "</head></html>" >> index.html
