@@ -130,6 +130,46 @@
     "redirectUrl": "{href/;jsessionid=.*//}"
   },
   {
+    "title": "Remove rss tracking from www.golem.de",
+    "uuid": "374dfb3f-59dd-40a0-b3a1-d95be1a46188",
+    "active": true,
+    "pattern": {
+      "scheme": "*",
+      "host": [
+        "www.golem.de"
+      ],
+      "path": [
+        "*-rss.html"
+      ]
+    },
+    "types": [
+      "main_frame"
+    ],
+    "action": "redirect",
+    "redirectUrl": "[pathname={pathname:0:-9}.html]"
+  },
+  {
+    "title": "Remove URI fragment tracking",
+    "uuid": "53f658af-d62b-43c7-91bf-ce30f2eed716",
+    "active": true,
+    "pattern": {
+      "scheme": "*",
+      "host": [
+        "*"
+      ],
+      "path": [
+        "*#!formfill:via=*",
+        "*#pk_*",
+        "*#matomo:*"
+      ]
+    },
+    "types": [
+      "main_frame"
+    ],
+    "action": "redirect",
+    "redirectUrl": "[hash=#]"
+  },
+  {
     "title": "Skip Amazon Picasso redirect",
     "description": "Skip Picasso redirect used on occasion by Amazon to track purchases",
     "uuid": "816c76d6-ad2e-4f7c-94be-e2436c93fe34",

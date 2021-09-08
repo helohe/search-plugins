@@ -2,7 +2,7 @@
 
 # Firefox Config - Config for a hardened, secure, privacy friendly firefox.
 #
-# Written in 2020,2021 by rusty-snake
+# Written in 2021 by rusty-snake
 #
 # To the extent possible under law, the author(s) have dedicated all copyright and
 # related and neighboring rights to this software to the public domain worldwide.
