@@ -158,6 +158,10 @@
         "*"
       ],
       "path": [
+        "*#.homepage.vwSlider.*",
+        "*#.hp.int.*",
+        "*#*.webcent*",
+        "*#.pc_page.*.index.*",
         "*#!formfill:via=*",
         "*#pk_*",
         "*#matomo:*"
