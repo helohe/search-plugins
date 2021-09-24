@@ -1,3 +1,10 @@
+GitLab is bullying its users more and more,
+
+# Moved to <https://codeberg.org/rusty-snake/firefox-config>
+
+<br>
+
+
 Firefox Config
 ==============
 
